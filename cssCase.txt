@@ -1,0 +1,7 @@
+1.  类用驼峰加“-”方式，驼峰为单词组合，“-”表示从属关系，比如，itemList-lastItem
+2.  多用组合，少用继承
+3.  模块统一用margin-top或者margin-bottom。防止相邻模块margin-top和margin-bottom边距重合
+4.  css选择符需保证权重尽可能低，目的为了保证样式容易被覆盖，提高可维护性。Html标签权重为1，class为10，id为100.少使用子选择器，多添加class，更利于维护
+5.  a标签的四种状态：love hate原则,l(link)ov(visited)e h(hover)a(active)te..visited在前，hover在后，以便在visited后还有hover效果
+6.  hasLayout   IE下border会断开，用“zoom：1”属性来hack,特殊情况下尝试“position：relative”
+7.  块级元素和行内元素区别：前者可以设置width，height属性，后者无效。前者margin和padding属性正常，后者竖直方向的margin和padding无边距效果
