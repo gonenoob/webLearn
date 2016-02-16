@@ -1,0 +1,44 @@
+$.contains(container,contained)
+ 检查一个DOM元素是另一个DOM元素的后代。
+ container必须为DOM元素
+ 
+$.each(collection, callback(indexInArray, valueOfElement))
+一个通用的迭代函数，它可以用来无缝迭代对象和数组。数组和类似数组的对象通过一个长度属性（如一个函数的参数对象）来迭代数字索引，从0到length - 1。
+其他对象通过其属性名进行迭代。
+
+$.extend(target[,obj1][,obj2])
+将两个或更多对象的内容合并到第一个对象。
+
+$.grep(array, function(elementOfArray, indexInArray) [, invert ])
+查找满足过滤函数的数组元素。原始数组不受影响。
+
+$.inArray(value, array [, fromIndex ])
+在数组中查找指定值并返回它的索引（如果没有找到，则返回-1）
+类似于JavaScript的原生.indexOf()方法
+
+$.isArray(obj)
+ 确定参数是不是一个数组
+ 
+$.makeArray(obj)
+转换一个类似数组的对象成为真正的JavaScript数组。
+
+$.map(array, callback(elementOfArray, indexInArray))
+将一个数组中的所有元素转换到另一个数组中。
+callback中this指向widow的对象
+
+$.merge()
+合并两个数组内容到第一个数组。
+
+$.now()
+返回一个数字，表示当前时间.是表达式(new Date).getTime()返回数值的一个简写
+
+$.trim(str)
+去掉字符串起始和结尾的空格。
+
+$.type(obj)
+确定JavaScript 对象的类型[[Class]] 。
+
+$.unique(array)
+删除数组中重复元素。只处理删除DOM元素数组，而不能处理字符串或者数字数组。
+
+
