@@ -41,4 +41,26 @@ $.type(obj)
 $.unique(array)
 删除数组中重复元素。只处理删除DOM元素数组，而不能处理字符串或者数字数组。
 
+.get(index)
+通过jQuery对象获取一个对应的DOM元素。
+.get()
+通过检索匹配jQuery对象得到对应的DOM元素。
+
+.index()
+从匹配的元素中搜索给定元素的索引值，从0开始计数。
+
+.toArray()
+返回一个包含jQuery对象集合中的所有DOM元素的数组。
+.toArray() 返回jQuery集合中所有元素：
+
+1
+alert($('li').toArray());
+所有匹配的DOM节点都会包含在一个标准的数组中.
+
+.toArray() 返回jQuery集合中所有元素：
+   alert($('li').toArray());
+所有匹配的DOM节点都会包含在一个标准的数组中：
+   [<li id="foo">, <li id="bar">]
+
+
 
