@@ -21,3 +21,11 @@
  .scrollTop(value)
  设置每个匹配元素的垂直滚动条位置.
  
+5.jquery 没有offsetWidth ,offsetWidth 是javascript 对象属性
+
+6.document.getElementByid("id") == $("#id")[0]
+
+7.scrollWidth：对象的实际内容的宽度，不包边线宽度，会随对象中内容超过可视区后而变大。 
+clientWidth：对象内容的可视区的宽度，不包滚动条等边线，会随对象显示大小的变化而改变。 
+offsetWidth：对象整体的实际宽度，包滚动条等边线，会随对象显示大小的变化而改变。
+ 
