@@ -12,7 +12,9 @@
 
 7.  块级元素和行内元素区别：前者可以设置width，height属性，后者无效。前者margin和padding属性正常，后者竖直方向的margin和padding无边距效果
 
-8.display:inline-block 两个块级元素有间距时，可以尝试font-size:0,来消除间距
+8.display:inline-block元素间会产生多余空白（本题没有涉及）。
+解决方法：父元素定义font-size:0 去掉行内块元素水平方向空白；
+          子元素定义vertical-align 属性去掉行内块元素垂直方向空白。
 
 9.white-space:wrap 文本不换行
 
