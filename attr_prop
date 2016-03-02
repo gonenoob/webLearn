@@ -1,0 +1,11 @@
+一个img标签:
+
+<img src="images/image.1.jpg" id="hibiscus" alt="Hibiscus" class="classA" />
+
+通常开发人员习惯将id, src, alt等叫做这个元素的"属性". 我将其称为"元素属性". 但是在解析成DOM对象时, 实际浏览器最后会将标签元素解析成"DOM对象", 并且将元素的"元素属性"存储为"DOM属性". 两者是有区别的. 
+虽然我们设置了元素的src是相对路径:images/image.1.jpg 
+但是在"DOM属性"中都会转换成绝对路径:http://localhost/images/image.1.jpg.
+
+甚至有些"元素属性"和"DOM属性"的名称都不一样,比如上面的元素属性class, 转换为DOM属性后对应className.
+
+牢记, 在javascript中我们可以直接获取或设置"DOM属性"
