@@ -31,3 +31,25 @@ each( callback )  Returns: jQuery包装集
 我们可以使用javascript中的getAttribute和setAttribute来操作元素的"元素属性".
 
 在jQuery中给你提供了attr()包装集函数, 能够同时操作包装集中所有元素的属性；.prop()操作DOM属性
+
+当使用id选择器时常常返回只有一个对象的jQuery包装集, 这个时侯常使用attr(name)函数获得它的元素属性:
+
+function testAttr1(event) {
+   alert($("#hibiscus").attr("class"));
+}
+
+注意attr(name)函数只返回第一个匹配元素的特定元素属性值. 而attr(key, name)会设置所有包装集中的元素属性:
+
+//修改所有img元素的alt属性
+$("img").attr("alt", "修改后的alt属性");
+
+而 attr( properties ) 可以一次修改多个元素属性:
+
+$("img").attr({title:"修改后的title", alt: "同时修改alt属性"});
+
+另外虽然我们可以使用 removeAttr( name ) 删除元素属性, 但是对应的DOM属性是不会被删除的, 只会影响DOM属性的值.
+
+比如将一个input元素的readonly元素属性去掉,会导致对应的DOM属性变成false(即input变成可编辑状态):
+
+$("#inputTest").removeAttr("readonly");
+
