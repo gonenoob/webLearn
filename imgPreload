@@ -1,0 +1,15 @@
+一、图片的懒加载和预加载
+懒加载，当用户滚动图片进入窗体的时候，才去加载；或者用户点击选项卡，原本隐藏的图片此时再去加载，这个也称之为懒加载
+
+预加载，用户还没有行为发生，资源已经加载完.
+
+二 基于用户行为的资源预加载。
+根据用户当前的行为来判断用户接下来将要进行的行为。比如hover时很可能进行click。可以对切换的内容再hover时进行资源预加载。
+例如，tab切换选项卡hover时对改选项卡对应展示内容预加载。
+tab.on("mouseenter",function(){
+  target.attr('src', target.attr('data-src')).removeAttr('data-src');
+})
+
+三 html5 预加载属性
+<link rel="prefetch" href="(url)">
+<link rel="prefetcher" href="(url)">
