@@ -1,5 +1,7 @@
 
+当将数据发送到服务器时，使用该内容类型。默认值是"application/x-www-form-urlencoded; charset=UTF-8"，适合大多数情况。
 $.ajax发送请求时，如果contentType设置为"appliaction/json",那么发送的数据显示在request payload下面
 如果使用默认的"application/x-www-form-urlencoded; charset=UTF-8"，则显示在from data 下面.
 
 W3C的XMLHttpRequest的规范规定，数据将总是使用UTF-8字符集传递给服务器；指定其他字符集无法强制浏览器更改编码。
+
