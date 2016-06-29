@@ -1,0 +1,26 @@
+var loadItem = function() {
+
+        if (loadingInstance && loadingInstance.state() == "pending") {
+            loadingInstance.abort();
+        }
+
+        loadingInstance = $.ajax({
+            url: "",
+            data: "",
+            dataType: "json",
+            method: 'post'
+        }).done(function(response) {
+
+            if (response.success) {
+              
+            }
+        }).fail(function(response,textStatus,error) {
+
+             if(textStatus !== "error" || response.readyState == 0){
+                    
+               }else{
+                    alert("网络信息错误");
+               }
+        })
+    }
+    在多次发送ajax请求时，取消之前的请求，判断状态，不提示错误信息
