@@ -15,5 +15,7 @@
     3.2.on()方法绑定事件可以提升效率
 
 4. 0==null//false   0 <= null //true   0 < null //false
+Number(0) == Number(null)
 当相等操作符的操作数是undefined或null时，不作强制类型转换，所以Number类型的0跟Null类型的null不等；
 而关系操作符会把操作数都转成Number类型再作比较（除非两个操作数都是String），所以0<=0是真，0<0是假。
+
