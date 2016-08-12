@@ -4,9 +4,9 @@
 *  http://www.webtoolkit.info/
 *
 *  Original code by Angel Marin, Paul Johnston.
-*
+* 哈希加密算法
 **/
-  
+
 function SHA256(s){
   
     var chrsz   = 8;
