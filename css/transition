@@ -1,0 +1,8 @@
+
+transition
+  transition: property duration timing-function delay;
+  设置四个过渡属性
+
+transform
+  transform: none|transform-functions;
+  transform 属性向元素应用 2D 或 3D 转换。该属性允许我们对元素进行旋转(rotate)、缩放(scale)、移动(translate)或倾斜(skew)。
