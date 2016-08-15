@@ -1,0 +1,28 @@
+
+来源http://www.zhangxinxu.com/wordpress/2016/08/webkit-box-reflect-moz-element/
+CSS倒影属性-webkit-box-reflect
+
+语法
+  -webkit-box-reflect: [ above | below | right | left ]? ? ?
+
+上面语法中，[]|?都是正则表达式中的通用表达含义，例如?表示0个或1个。|表示或者的意思。
+具体来说-webkit-box-reflect最多可以由3部分组成，分别如下：
+
+ 1. 方位
+    可以是下面4个值中的1个，above,below,left,right，分别表示上下左右。如果不是使用类似inherit等全局关键字，则此方位值是不能缺省的。
+ 2. 偏移大小
+    倒影和原始元素偏移距离。可以是数值，也可以是百分比值。如果是百分比值，则百分比大小是相对于元素自身尺寸计算的。和transform中translate的百分比计算是一致的。
+ 3.遮罩图片
+    对元素倒影的遮罩控制。语法类似于background-image。
+  
+  例如：
+    -webkit-box-reflect: below;
+
+    -webkit-box-reflect: right;
+
+    -webkit-box-reflect: right 10px;
+
+    -webkit-box-reflect: below 0 linear-gradient(transparent, white);
+
+    -webkit-box-reflect: below 0 url(shuai2.png);
+  
