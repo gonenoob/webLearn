@@ -1,0 +1,19 @@
+SSE Server-Sent Events
+SSE是围绕只读Comet交互推出的API或者模式。
+SSE API用于创建到服务器的单向连接，服务器通过这个连接可以发送任意数量的数据。
+服务器响应的MIME类型必须是text/event-stream，而且是浏览器中的Javascript API能解析的格式输出。
+现对于Comet，我们可以看出我们只进行了一次连接，然后服务端会去控制数据的响应，从而发送给客户端。
+这样相对来说，但是如同定义的描述，这种只适合只读数据的情形。比如一些通知和状态码这样的。
+SEE的使用非常简单，只需要掌握这几个api就行：
+
+var es = new EventSource('http://your.api.com' 
+function listener(event) {  
+    console.log(event.data);
+}
+// 创建一个SSE连接
+es.addEventListener("open", listener);  
+// 响应获取消息的事件
+es.addEventListener("message", listener);  
+// 发生错误
+es.addEventListener("error", listener);
+
