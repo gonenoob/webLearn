@@ -17,7 +17,7 @@
 
 例如：
 sha256(
-  sha265(sha265(password)) + sha265(username)
+  sha256(sha256(password)) + sha256(username)
 )
 
 
