@@ -1,0 +1,27 @@
+父元素定义  
+father{
+  display:-moz-box; 
+  display:-webkit-box; 
+  display:-o-box; 
+  display:box;
+  
+  //子元素的方向:horizontal | vertical | inline-axis | block-axis | inherit
+  //horizontal与inline-axis横排；vertical与block-axis纵列。
+  -moz-box-orient:vertical; 
+  -webkit-box-orient:vertical; 
+  -o-box-orient:vertical;
+  box-orient:vertical; 
+  
+  //子元素的排列顺序 normal | reverse | inherit
+  -moz-box-direction:reverse;
+  -webkit-box-direction:reverse;
+  box-direction:reverse
+} 
+
+子元素定义 box-flex设置为正整数，占父元素的份额，也可设置成实际大小
+child1{
+  box-flex: 1;
+}
+child1{
+  width: 50px;
+}
