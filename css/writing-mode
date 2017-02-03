@@ -9,7 +9,7 @@ writing-mode: vertical-lr;
 writing-mode: inherit;
 writing-mode: initial;
 writing-mode: unset;
-各个关键字属性值的含义，我们透明名称就能知道其大概的意思，例如，默认值horizontal-tb表示，文本流是水平方向(horizontal)的，元素是从上往下(tb:top-bottom)堆叠的。
+默认值horizontal-tb表示，文本流是水平方向(horizontal)的，元素是从上往下(tb:top-bottom)堆叠的。
 
 vertical-rl表示文本是垂直方向(vertical)展示，然后阅读的顺序是从右往左(rl:right-left)，跟我们古诗的阅读顺序一致。
 vertical-lr表示文本是垂直方向(vertical)展示，然后阅读的顺序还是默认的从左往右(lr:left-right)，也就是仅仅是水平变垂直。
