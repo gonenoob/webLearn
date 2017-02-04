@@ -1,0 +1,8 @@
+css命名
+
+http://www.zhangxinxu.com/wordpress/2010/09/精简高效的CSS命名准则方法/
+无ID，无层级，无标签
+css渲染从右向左
+《高性能网站进阶指南》一书曾提到CSS的渲染方式是“从右往左”渲染的，
+就拿#test ul{}举例，先渲染页面上所有的ul标签，再去寻找id为test的元素，所以，出现#test div{}这种写法的人都是傻×的，页面先渲染id为test的元素？
+非也！先渲染页面上所有的div，再去寻找其老爸有没有id为test的元素。
