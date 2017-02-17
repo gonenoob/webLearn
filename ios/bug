@@ -1,0 +1,1 @@
+a 链接跳转之前不一定先执行click事件，需要preventDefault，在js里跳转
