@@ -1,1 +1,3 @@
 a 链接跳转之前不一定先执行click事件，需要preventDefault，在js里跳转
+
+ios safari 不支持width: auto
